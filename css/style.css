@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-poppins bg-[#f7f7f7];
+    }
+    main {
+        @apply md:w-[360px] sm:w-full w-full h-full bg-white mx-auto;
+    }
+}
+
+@layer components {
+
+    /* Navbar Class */
+    .navbar {
+        @apply md:w-[360px] sm:w-full w-full fixed bottom-0 py-6 px-[42px] bg-white;
+    }
+    .navbar-flex {
+        @apply flex items-center justify-between;
+    }
+    .navbar-menu {
+        @apply flex flex-col justify-center gap-1 text-black-1 text-opacity-40 text-[10px] font-medium leading-4 hover:text-primary;
+    }
+
+    /* Hero Class */
+    .hero {
+        @apply w-full px-6 pt-8 pb-[72px] flex items-center justify-between bg-primary relative;
+    }
+    .logo {
+        @apply font-extrabold text-2xl leading-tight tracking-wider flex items-center gap-1 text-white;
+    }
+    .notification {
+        @apply cursor-pointer text-white;
+    }
+    .hero-box{
+        @apply absolute -bottom-12 left-1/2 -translate-x-1/2 bg-white px-[15px] py-[22px] rounded-2xl shadow-sm flex items-center justify-between w-[330px];
+    }
+    .hero-box-flexcol {
+        @apply flex flex-col gap-0;
+    }
+    .hero-box-title {
+        @apply text-sm font-medium leading-normal uppercase;
+    }
+    .hero-box-nominal {
+        @apply text-xl font-bold leading-normal;
+    }
+    .hero-box-btn {
+        @apply bg-secondary rounded-full py-[10px] px-6 text-center text-sm font-medium leading-normal hover:scale-105 duration-300;
+    }
+
+    /* Menu Class */
+    .menu {
+        @apply w-full pt-[71px] pb-[264px] px-[15px] mx-auto;
+    }
+    .menu-title {
+        @apply text-center text-lg font-semibold leading-normal;
+    }
+    .menu-grid {
+        @apply grid grid-cols-12 justify-center gap-5 pt-[9px];
+    }
+    .menu-card {
+        @apply col-span-4 py-[15px] px-[10px] w-full flex flex-col gap-[10px] justify-center bg-white border border-gray-200 rounded-[21px] shadow-sm;
+    }
+    .menu-icons {
+        @apply w-9 h-9 block self-center;
+    }
+    .menu-text {
+        @apply text-xs font-normal leading-normal text-center opacity-80 w-full;
+    }
+}
