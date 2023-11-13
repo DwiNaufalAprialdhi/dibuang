@@ -17,7 +17,7 @@
 
     /* Navbar Class */
     .navbar {
-        @apply md:w-[360px] sm:w-full w-full fixed bottom-0 py-6 px-[42px] bg-white;
+        @apply md:w-[360px] sm:w-full w-full fixed bottom-0 py-6 px-[42px] bg-white z-50;
     }
     .navbar-flex {
         @apply flex items-center justify-between;

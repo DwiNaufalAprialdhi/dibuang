@@ -602,6 +602,7 @@ main{
 .navbar{
   position: fixed;
   bottom: 0px;
+  z-index: 50;
   width: 100%;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
