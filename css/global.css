@@ -463,6 +463,20 @@ main{
   }
 }
 
+header{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -647,6 +661,352 @@ main{
   color: rgb(0 150 74 / var(--tw-text-opacity));
 }
 
+/* Header Class */
+
+/* Login Class */
+
+.login{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 211px;
+  padding-bottom: 30px;
+}
+
+.login-logo{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  --tw-text-opacity: 1;
+  color: rgb(49 43 42 / var(--tw-text-opacity));
+}
+
+.login-logo-icons{
+  width: 58px;
+  --tw-text-opacity: 1;
+  color: rgb(0 150 74 / var(--tw-text-opacity));
+}
+
+.slogan{
+  margin-top: 0.5rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+.alert-error{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 10px;
+  background-color: rgb(223 32 40 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.07;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  --tw-text-opacity: 1;
+  color: rgb(223 32 40 / var(--tw-text-opacity));
+}
+
+.error-icons{
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.login-form{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-top: 1.25rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 21px;
+}
+
+.login-form-group{
+  position: relative;
+}
+
+.username{
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgb(49 43 42 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.05;
+  padding: 15px;
+  padding-left: 44px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.username-icons{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.password{
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgb(49 43 42 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.05;
+  padding: 15px;
+  padding-left: 44px;
+  padding-right: 44px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.password-icons{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.visible-icons{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: block;
+  cursor: pointer;
+}
+
+.unvisible-icons{
+  position: absolute;
+  top: 17px;
+  right: 15px;
+  z-index: 10;
+  display: none;
+  cursor: pointer;
+  border-radius: 9999px;
+}
+
+.login-btn{
+  margin-top: 10px;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 150 74 / var(--tw-bg-opacity));
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.forgot-link{
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+.registration-link{
+  margin-top: 148px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  --tw-text-opacity: 1;
+  color: rgb(189 189 189 / var(--tw-text-opacity));
+}
+
+/* Registration Class */
+
+.registration{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.registration-title{
+  margin-bottom: 9px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.registration-caption{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.5;
+}
+
+.visible-confirm-icons{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: block;
+  cursor: pointer;
+}
+
+.unvisible-confirm-icons{
+  position: absolute;
+  top: 17px;
+  right: 15px;
+  z-index: 10;
+  display: none;
+  cursor: pointer;
+  border-radius: 9999px;
+}
+
+.registration-form{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 236px;
+  margin-top: 38px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 21px;
+}
+
+.registration-form-group{
+  position: relative;
+}
+
+.registration-btn{
+  margin-top: 20px;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 150 74 / var(--tw-bg-opacity));
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* Forgot Class */
+
+.forgot{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.forgot-title{
+  margin-bottom: 9px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.forgot-caption{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.5;
+}
+
+.forgot-form{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 450px;
+  margin-top: 38px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 21px;
+}
+
+.forgot-form-group{
+  position: relative;
+}
+
+.email{
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgb(49 43 42 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.05;
+  padding: 15px;
+  padding-left: 44px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.email-icons{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.otp{
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgb(49 43 42 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.05;
+  padding: 15px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.forgot-btn{
+  margin-top: 10px;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 150 74 / var(--tw-bg-opacity));
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 /* Hero Class */
 
 .hero{
@@ -812,6 +1172,168 @@ main{
   font-weight: 400;
   line-height: 1.5;
   opacity: 0.8;
+}
+
+/* Other Class */
+
+.\!other{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  -moz-column-gap: 26px;
+       column-gap: 26px;
+  row-gap: 20px;
+  padding-left: 31px;
+  padding-right: 31px;
+  padding-bottom: 223px;
+}
+
+.other{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  -moz-column-gap: 26px;
+       column-gap: 26px;
+  row-gap: 20px;
+  padding-left: 31px;
+  padding-right: 31px;
+  padding-bottom: 223px;
+}
+
+.other-card{
+  grid-column: span 3 / span 3;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.other-icons{
+  display: block;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: rgb(49 43 42 / var(--tw-border-opacity));
+  --tw-border-opacity: 0.1;
+  padding: 1rem;
+}
+
+.other-title{
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+/* Saldo Class */
+
+.saldo{
+  width: 100%;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-bottom: 39px;
+}
+
+.saldo-card{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 150 74 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.saldo-card-flex{
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.saldo-card-title{
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.saldo-card-nominal{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.saldo-form{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 21px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.saldo-form-group{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.saldo-form-title{
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.5;
+  opacity: 0.5;
+}
+
+.saldo-form-input{
+  border-radius: 0.25rem;
+  border-width: 1px;
+  --tw-border-opacity: 0.3;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  --tw-text-opacity: 0.8;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.saldo-form-attention{
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.5;
+  opacity: 0.5;
+}
+
+.saldo-form-btn{
+  margin-top: 30px;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 150 74 / var(--tw-bg-opacity));
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .sr-only{
@@ -2143,6 +2665,10 @@ main{
   font-weight: 700;
 }
 
+.font-medium{
+  font-weight: 500;
+}
+
 .uppercase{
   text-transform: uppercase;
 }
@@ -2215,6 +2741,11 @@ main{
   color: rgb(51 102 153 / .35);
 }
 
+.text-black-1{
+  --tw-text-opacity: 1;
+  color: rgb(49 43 42 / var(--tw-text-opacity));
+}
+
 .text-blue-500{
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
@@ -2264,6 +2795,10 @@ main{
 .subpixel-antialiased{
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
+}
+
+.opacity-80{
+  opacity: 0.8;
 }
 
 .bg-blend-normal{

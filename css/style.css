@@ -11,6 +11,9 @@
     main {
         @apply md:w-[360px] sm:w-full w-full h-full bg-white mx-auto;
     }
+    header {
+        @apply w-full px-[30px] py-10 flex items-center gap-[30px] text-lg font-semibold;
+    }
 }
 
 @layer components {
@@ -24,6 +27,117 @@
     }
     .navbar-menu {
         @apply flex flex-col justify-center gap-1 text-black-1 text-opacity-40 text-[10px] font-medium leading-4 hover:text-primary;
+    }
+
+    /* Header Class */
+
+
+    /* Login Class */
+    .login {
+        @apply w-full px-[30px] mx-auto pt-[211px] pb-[30px];
+    }
+    .login-logo {
+        @apply font-extrabold text-2xl leading-tight tracking-wider flex items-center justify-center gap-1 text-black-1 w-full;
+    }
+    .login-logo-icons {
+        @apply text-primary w-[58px];
+    }
+    .slogan {
+        @apply text-center text-sm font-normal leading-normal opacity-80 mt-2 mb-10;
+    }
+    .alert-error {
+        @apply bg-[#DF2028] bg-opacity-[0.07] rounded-[10px] px-[10px] py-[14px] flex items-center gap-4 text-[#DF2028] text-sm font-normal leading-normal;
+    }
+    .error-icons {
+        @apply w-6 h-6;
+    }
+    .login-form {
+        @apply w-full flex flex-col justify-center gap-[21px] mb-[30px] mt-5 mx-auto;
+    }
+    .login-form-group {
+        @apply relative;
+    }
+    .username {
+        @apply outline-none p-[15px] pl-[44px] bg-black-1 bg-opacity-5 rounded-[10px] w-full text-sm font-normal leading-6;
+    }
+    .username-icons {
+        @apply absolute top-[15px] left-[15px];
+    }
+    .password {
+        @apply outline-none p-[15px] pl-[44px] pr-[44px] bg-black-1 bg-opacity-5 rounded-[10px] w-full text-sm font-normal leading-6;
+    }
+    .password-icons {
+        @apply absolute top-[15px] left-[15px];
+    }
+    .visible-icons {
+        @apply block absolute top-[15px] right-[15px] cursor-pointer;
+    }
+    .unvisible-icons {
+        @apply hidden absolute top-[17px] rounded-full right-[15px] cursor-pointer z-10;
+    }
+    .login-btn {
+        @apply text-center bg-primary p-4 rounded-full text-white text-base font-bold leading-6 mt-[10px];
+    }
+    .forgot-link {
+        @apply text-center text-sm font-normal leading-normal opacity-80;
+    }
+    .registration-link {
+        @apply text-center text-base font-normal leading-normal text-[#BDBDBD] mt-[148px];
+    }
+
+    /* Registration Class */
+    .registration {
+        @apply w-full px-[30px] mx-auto pb-[30px];
+    }
+    .registration-title {
+        @apply text-2xl font-semibold uppercase leading-normal mb-[9px];
+    }
+    .registration-caption {
+        @apply text-base font-normal leading-normal opacity-50;
+    }
+    .visible-confirm-icons {
+        @apply block absolute top-[15px] right-[15px] cursor-pointer;
+    }
+    .unvisible-confirm-icons {
+        @apply hidden absolute top-[17px] rounded-full right-[15px] cursor-pointer z-10;
+    }
+    .registration-form {
+        @apply w-full flex flex-col justify-center gap-[21px] mb-[236px] mt-[38px] mx-auto;
+    }
+    .registration-form-group {
+        @apply relative;
+    }
+    .registration-btn {
+        @apply text-center bg-primary p-4 rounded-full text-white text-base font-bold leading-6 mt-[20px];
+    }
+
+    /* Forgot Class */
+    .forgot {
+        @apply w-full px-[30px] mx-auto pb-[30px];
+    }
+    .forgot-title {
+        @apply text-2xl font-semibold uppercase leading-normal mb-[9px];
+    }
+    .forgot-caption {
+        @apply text-base font-normal leading-normal opacity-50;
+    }
+    .forgot-form {
+        @apply w-full flex flex-col justify-center gap-[21px] mb-[450px] mt-[38px] mx-auto;
+    }
+    .forgot-form-group {
+        @apply relative;
+    }
+    .email {
+        @apply outline-none p-[15px] pl-[44px] bg-black-1 bg-opacity-5 rounded-[10px] w-full text-sm font-normal leading-6;
+    }
+    .email-icons {
+        @apply absolute top-[15px] left-[15px];
+    }
+    .otp {
+        @apply outline-none p-[15px] bg-black-1 bg-opacity-5 rounded-[10px] w-full text-sm font-normal leading-6;
+    }
+    .forgot-btn {
+        @apply text-center bg-primary p-4 rounded-full text-white text-base font-bold leading-6 mt-[10px];
     }
 
     /* Hero Class */
@@ -70,5 +184,54 @@
     }
     .menu-text {
         @apply text-xs font-normal leading-normal text-center opacity-80 w-full;
+    }
+
+    /* Other Class */
+    .other {
+        @apply w-full pb-[223px] px-[31px] grid grid-cols-12 gap-x-[26px] gap-y-[20px];
+    }
+    .other-card {
+        @apply col-span-3 flex flex-col gap-[5px] w-full justify-center;
+    }
+    .other-icons {
+        @apply block p-4 border border-black-1 border-opacity-10 rounded-full;
+    }
+    .other-title {
+        @apply text-center text-xs font-normal leading-normal opacity-80;
+    }
+
+    /* Saldo Class */
+    .saldo {
+        @apply w-full px-[14px] pb-[39px];
+    }
+    .saldo-card {
+        @apply bg-primary text-white px-4 py-[13px] rounded-lg flex items-center justify-between;
+    }
+    .saldo-card-flex {
+        @apply flex flex-col gap-0;
+    }
+    .saldo-card-title {
+        @apply text-xs font-medium leading-normal uppercase;
+    }
+    .saldo-card-nominal {
+        @apply text-xl font-bold leading-normal;
+    }
+    .saldo-form {
+        @apply mt-10 px-4 w-full mx-auto flex flex-col gap-[21px];
+    }
+    .saldo-form-group {
+        @apply w-full flex flex-col gap-[5px];
+    }
+    .saldo-form-title {
+        @apply text-xs font-medium uppercase leading-normal opacity-50;
+    }
+    .saldo-form-input {
+        @apply p-[15px] bg-white outline-none border border-opacity-30 rounded text-base font-normal leading-6 text-opacity-80;
+    }
+    .saldo-form-attention {
+        @apply text-[10px] font-medium leading-normal opacity-50;
+    }
+    .saldo-form-btn {
+        @apply text-center bg-primary rounded-full p-4 text-white text-base font-bold leading-6 mt-[30px];
     }
 }
