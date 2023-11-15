@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dibuang - Home</title>
+    <title>Dibuang - Mutasi</title>
     <link href="./css/global.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="./assets/icons/dibuang.png" />
   </head>
@@ -86,129 +86,97 @@
       </nav>
       <!-- Navbar End -->
 
-      <!-- Hero Start -->
-      <section class="hero">
-        <a href="index.html" class="logo"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-8 h-8"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
-            />
-          </svg>
-          DIBUANG
-        </a>
-        <svg
-          class="notification"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-        >
-          <path
-            d="M19 13.586V10C19 6.783 16.815 4.073 13.855 3.258C13.562 2.52 12.846 2 12 2C11.154 2 10.438 2.52 10.145 3.258C7.185 4.074 5 6.783 5 10V13.586L3.293 15.293C3.19996 15.3857 3.12617 15.4959 3.07589 15.6172C3.0256 15.7386 2.99981 15.8687 3 16V18C3 18.2652 3.10536 18.5196 3.29289 18.7071C3.48043 18.8946 3.73478 19 4 19H20C20.2652 19 20.5196 18.8946 20.7071 18.7071C20.8946 18.5196 21 18.2652 21 18V16C21.0002 15.8687 20.9744 15.7386 20.9241 15.6172C20.8738 15.4959 20.8 15.3857 20.707 15.293L19 13.586ZM19 17H5V16.414L6.707 14.707C6.80004 14.6143 6.87383 14.5041 6.92412 14.3828C6.9744 14.2614 7.00019 14.1313 7 14V10C7 7.243 9.243 5 12 5C14.757 5 17 7.243 17 10V14C17 14.266 17.105 14.52 17.293 14.707L19 16.414V17ZM12 22C12.6193 22.0008 13.2235 21.8086 13.7285 21.4502C14.2335 21.0917 14.6143 20.5849 14.818 20H9.182C9.38566 20.5849 9.76648 21.0917 10.2715 21.4502C10.7765 21.8086 11.3807 22.0008 12 22Z"
-            fill="currentColor"
-          />
-        </svg>
-        <div class="hero-box">
-          <div class="hero-box-flexcol">
-            <h2 class="hero-box-title">Saldo</h2>
-            <h2 class="hero-box-nominal">Rp5000.000</h2>
+      <!-- Transaction Start -->
+      <section class="mutasi">
+        <div class="mutasi-head">
+          <div class="mutasi-head-flex-start">
+            <h2 class="mutasi-title">Mutasi</h2>
+            <img src="./assets/icons/mutasi.svg" alt="mutasi" />
           </div>
-          <a href="saldo.html">
-            <button class="hero-box-btn">Tarik Saldo</button>
-          </a>
+          <div class="mutasi-head-flex-center">
+            <button
+              class="mutasi-proses-btn bg-secondary"
+              onclick="mutasiProses()"
+            >
+              Proses
+            </button>
+            <button class="mutasi-riwayat-btn" onclick="mutasiRiwayat()">
+              Riwayat
+            </button>
+          </div>
         </div>
-      </section>
-      <!-- Hero End -->
+        <div class="mutasi-body">
+          <!-- Proses Start -->
+          <div class="mp-content">
+            <div class="mutasi-proses">
+              <div class="mutasi-proses-ContentDate">
+                <h2 class="mp-content">Tunai #003</h2>
+                <h2 class="mp-date">Rabu, 22 Jan 2022</h2>
+              </div>
+              <div class="mutasi-proses-StatusNominal">
+                <h2 class="mp-status">Proses</h2>
+                <h2 class="mp-nominal">-Rp800.000</h2>
+              </div>
+            </div>
+            <div class="mutasi-proses">
+              <div class="mutasi-proses-ContentDate">
+                <h2 class="mp-content">Tunai #004</h2>
+                <h2 class="mp-date">Kamis, 23 Jan 2022</h2>
+              </div>
+              <div class="mutasi-proses-StatusNominal">
+                <h2 class="mp-status">Proses</h2>
+                <h2 class="mp-nominal">-Rp700.000</h2>
+              </div>
+            </div>
+            <div class="mutasi-proses">
+              <div class="mutasi-proses-ContentDate">
+                <h2 class="mp-content">Tunai #005</h2>
+                <h2 class="mp-date">Jumat, 24 Jan 2022</h2>
+              </div>
+              <div class="mutasi-proses-StatusNominal">
+                <h2 class="mp-status">Proses</h2>
+                <h2 class="mp-nominal">-Rp600.000</h2>
+              </div>
+            </div>
+          </div>
+          <!-- Proses End -->
 
-      <!-- Menu Start -->
-      <section class="menu">
-        <h2 class="menu-title">Setor sampah apa hari ini?</h2>
-        <div class="menu-grid">
-          <a href="#" class="menu-card">
-            <img
-              src="./assets/icons/kardus.svg"
-              alt="icons-box"
-              class="menu-icons"
-            />
-            <h2 class="menu-text">Kardus</h2>
-          </a>
-          <a href="#" class="menu-card">
-            <img
-              src="./assets/icons/kaca.svg"
-              alt="icons-box"
-              class="menu-icons"
-            />
-            <h2 class="menu-text">Kaca</h2>
-          </a>
-          <a href="#" class="menu-card">
-            <img
-              src="./assets/icons/kertas.svg"
-              alt="icons-box"
-              class="menu-icons"
-            />
-            <h2 class="menu-text">Kertas</h2>
-          </a>
-          <a href="#" class="menu-card">
-            <img
-              src="./assets/icons/plastik.svg"
-              alt="icons-box"
-              class="menu-icons"
-            />
-            <h2 class="menu-text">Plastik</h2>
-          </a>
-          <a href="#" class="menu-card">
-            <img
-              src="./assets/icons/logam.svg"
-              alt="icons-box"
-              class="menu-icons"
-            />
-            <h2 class="menu-text">Logam</h2>
-          </a>
-          <a href="#" class="menu-card">
-            <img
-              src="./assets/icons/baja.svg"
-              alt="icons-box"
-              class="menu-icons"
-            />
-            <h2 class="menu-text">Baja</h2>
-          </a>
-          <a href="#" class="menu-card">
-            <img
-              src="./assets/icons/aluminium.svg"
-              alt="icons-box"
-              class="menu-icons"
-            />
-            <h2 class="menu-text">Aluminium</h2>
-          </a>
-          <a href="#" class="menu-card">
-            <img
-              src="./assets/icons/kabel.svg"
-              alt="icons-box"
-              class="menu-icons"
-            />
-            <h2 class="menu-text">Kabel</h2>
-          </a>
-          <a href="other.html" class="menu-card">
-            <img
-              src="./assets/icons/lainnya.svg"
-              alt="icons-box"
-              class="menu-icons"
-            />
-            <h2 class="menu-text">Lainnya</h2>
-          </a>
+          <!-- Riwayat Start -->
+          <div class="mr-content hidden">
+            <div class="mutasi-riwayat">
+              <div class="mutasi-riwayat-flex-row">
+                <div class="mutasi-riwayat-ContentDate">
+                  <h2 class="mr-content">Transfer #002</h2>
+                  <h2 class="mr-date">selasa, 12 Jan 2022</h2>
+                </div>
+                <div class="mutasi-riwayat-StatusNominal">
+                  <h2 class="mr-status">Selesai</h2>
+                  <h2 class="mr-nominal">Rp200.000</h2>
+                </div>
+              </div>
+              <a href="mutasi_detail.html" type="button" class="mutasi-btn">
+                Lihat Bukti Transfer
+              </a>
+            </div>
+            <div class="mutasi-riwayat">
+              <div class="mutasi-riwayat-flex-row">
+                <div class="mutasi-riwayat-ContentDate">
+                  <h2 class="mr-content">Tunai #001</h2>
+                  <h2 class="mr-date">selasa, 01 Jan 2022</h2>
+                </div>
+                <div class="mutasi-riwayat-StatusNominal">
+                  <h2 class="mr-status">Selesai</h2>
+                  <h2 class="mr-nominal">-Rp500.000</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Riwayat End -->
         </div>
       </section>
-      <!-- Menu End -->
+      <!-- Transaction End -->
     </main>
+
+    <script src="./js/style.js"></script>
   </body>
 </html>

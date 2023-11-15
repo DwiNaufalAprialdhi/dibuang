@@ -26,7 +26,7 @@
         @apply flex items-center justify-between;
     }
     .navbar-menu {
-        @apply flex flex-col justify-center gap-1 text-black-1 text-opacity-40 text-[10px] font-medium leading-4 hover:text-primary;
+        @apply flex flex-col justify-center items-center gap-1 text-black-1 text-opacity-40 text-[10px] font-medium leading-4 hover:text-primary;
     }
 
     /* Header Class */
@@ -233,5 +233,232 @@
     }
     .saldo-form-btn {
         @apply text-center bg-primary rounded-full p-4 text-white text-base font-bold leading-6 mt-[30px];
+    }
+
+    /* Transaction Class */
+    .transaction {
+        @apply w-full pb-[499px];
+    }
+    .transaction-head {
+        @apply w-full bg-primary flex flex-col gap-1 pb-[14px];
+    }
+    .transaction-head-flex-start {
+        @apply flex gap-[10px] items-center md:justify-start justify-center px-[30px];
+    }
+    .transaction-title {
+        @apply text-white opacity-80 text-lg font-semibold leading-normal;
+    }
+    .transaction-head-flex-center {
+        @apply flex gap-[10px] items-center justify-center mx-auto bg-white rounded-full p-1;
+    }
+    .transaction-proses-btn {
+        @apply py-[10px] px-12 text-center rounded-full text-sm font-medium leading-normal transition-all ease-out duration-300;
+    }
+    .transaction-riwayat-btn {
+        @apply py-[10px] px-12 text-center rounded-full text-sm font-medium leading-normal transition-all ease-out duration-300;
+    }
+    .transaction-body {
+        @apply py-[31px] px-[30px];
+    }
+    .transaction-proses {
+        @apply py-[25px] px-[15px] flex items-center justify-between;
+    }
+    .transaction-proses-ContentDate {
+        @apply flex flex-col gap-3;
+    }
+    .transaction-proses-StatusNominal {
+        @apply flex flex-col gap-3 text-end;
+    }
+    .tp-content {
+        @apply text-sm font-medium leading-normal opacity-80;
+    }
+    .tp-date {
+        @apply text-xs font-medium leading-normal opacity-30; 
+    }
+    .tp-status {
+        @apply text-xs font-medium leading-normal opacity-50;
+    }
+    .tp-nominal {
+        @apply text-sm font-medium leading-normal opacity-30;
+    }
+    .transaction-riwayat {
+        @apply py-[25px] px-[15px] flex items-center justify-between;
+    }
+    .transaction-riwayat-ContentDate {
+        @apply flex flex-col gap-3;
+    }
+    .transaction-riwayat-StatusNominal {
+        @apply flex flex-col gap-3 text-end;
+    }
+    .tr-content {
+        @apply text-sm font-medium leading-normal opacity-80;
+    }
+    .tr-date {
+        @apply text-xs font-medium leading-normal opacity-30; 
+    }
+    .tr-status {
+        @apply text-xs font-medium leading-normal opacity-50;
+    }
+    .tr-nominal {
+        @apply text-sm font-medium leading-normal opacity-30;
+    }
+
+    /* Mutasi Class */
+    .mutasi {
+        @apply w-full pb-[499px];
+    }
+    .mutasi-head {
+        @apply w-full bg-primary flex flex-col gap-1 pb-[14px];
+    }
+    .mutasi-head-flex-start {
+        @apply flex gap-[39px] items-center md:justify-start justify-center px-[30px];
+    }
+    .mutasi-title {
+        @apply text-white opacity-80 text-lg font-semibold leading-normal;
+    }
+    .mutasi-head-flex-center {
+        @apply flex gap-[10px] items-center justify-center mx-auto bg-white rounded-full p-1;
+    }
+    .mutasi-proses-btn {
+        @apply py-[10px] px-12 text-center rounded-full text-sm font-medium leading-normal transition-all ease-out duration-300;
+    }
+    .mutasi-riwayat-btn {
+        @apply py-[10px] px-12 text-center rounded-full text-sm font-medium leading-normal transition-all ease-out duration-300;
+    }
+    .mutasi-body {
+        @apply py-[31px] px-[30px];
+    }
+    .mutasi-proses {
+        @apply py-[25px] px-[15px] flex items-center justify-between;
+    }
+    .mutasi-proses-ContentDate {
+        @apply flex flex-col gap-3;
+    }
+    .mutasi-proses-StatusNominal {
+        @apply flex flex-col gap-3 text-end;
+    }
+    .mp-content {
+        @apply text-sm font-medium leading-normal opacity-80;
+    }
+    .mp-date {
+        @apply text-xs font-medium leading-normal opacity-30; 
+    }
+    .mp-status {
+        @apply text-xs font-medium leading-normal opacity-50;
+    }
+    .mp-nominal {
+        @apply text-sm font-medium leading-normal opacity-30;
+    }
+    .mutasi-riwayat {
+        @apply py-[25px] px-[15px] flex-col gap-4;
+    }
+    .mutasi-riwayat-flex-row {
+        @apply flex items-center justify-between;
+    }
+    .mutasi-riwayat-ContentDate {
+        @apply flex flex-col gap-3;
+    }
+    .mutasi-riwayat-StatusNominal {
+        @apply flex flex-col gap-3 text-end;
+    }
+    .mutasi-btn {
+        @apply  bg-primary px-[68px] py-[10px] rounded-full text-center w-full text-white mt-4;
+    }
+    .mr-content {
+        @apply text-sm font-medium leading-normal opacity-80;
+    }
+    .mr-date {
+        @apply text-xs font-medium leading-normal opacity-30; 
+    }
+    .mr-status {
+        @apply text-xs font-medium leading-normal opacity-50;
+    }
+    .mr-nominal {
+        @apply text-sm font-medium leading-normal opacity-30;
+    }
+
+    /* Mutasi Detail Class */
+    .mutasi-detail {
+        @apply px-[30px] pb-[302px];
+    }
+    .mutasi-detail-flex {
+        @apply px-[15px] mt-[41px] flex flex-col gap-[15px];
+    }
+    .mutasi-detail-title {
+        @apply text-xs font-medium leading-normal uppercase;
+    }
+    .mutasi-detail-image {
+        @apply w-[300px] h-auto object-cover;
+    }
+
+    /* Profile Class */
+    .header-profile {
+        @apply w-full flex items-center justify-between py-10;
+    }
+    .header-profile-title {
+        @apply pl-[30px] text-lg font-normal leading-normal opacity-80;
+    }
+    .header-profile-btn {
+        @apply p-4 bg-[#DF2028] bg-opacity-[.07] rounded-l-full text-[#DF2028] text-base font-bold leading-6 hover:scale-105 duration-300;
+    }
+    .profile {
+        @apply w-full pb-[181px] flex flex-col gap-[21px];
+    }
+    .profile-hero {
+        @apply flex items-center gap-[15px] px-[30px];
+    }
+    .profile-hero-avatar {
+        @apply w-[55px] h-[55px] object-cover rounded-full;
+    }
+    .profile-hero-flex-col {
+        @apply flex flex-col gap-0;
+    }
+    .profile-hero-name {
+        @apply text-lg font-medium leading-normal opacity-80;
+    }
+    .profile-hero-phone {
+        @apply text-base font-normal leading-normal opacity-50;
+    }
+    .profile-card {
+        @apply rounded-[18px] w-full p-4 flex flex-col gap-2;
+    }
+    .profile-card-title {
+        @apply text-center text-lg font-normal leading-normal;
+    }
+    .profile-card-box {
+        @apply bg-primary rounded-[9px] flex justify-between items-center;
+    }
+    .profile-card-box-rp {
+        @apply text-white flex flex-col gap-[3px] py-[13px] px-[15px];
+    }
+    .card-box-rp-title {
+        @apply text-xs font-medium leading-normal uppercase;
+    }
+    .card-box-rp-nominal {
+        @apply text-xl font-bold leading-normal;
+    }
+    .profile-card-box-kg {
+        @apply flex flex-col gap-[3px] bg-secondary rounded-[9px] py-[13px] pr-[15px] pl-[36px];
+    }
+    .card-box-kg-title {
+        @apply text-xs font-medium leading-normal uppercase;
+    }
+    .card-box-kg-nominal {
+        @apply text-xl font-bold leading-normal;
+    }
+    .profile-menu {
+        @apply flex flex-col gap-[45px] px-[30px] mt-[30px];
+    }
+    .profile-menu-link {
+        @apply flex items-center justify-between;
+    }
+    .profile-menu-link-flex-col {
+        @apply flex items-center gap-[21px]
+    }
+    .profile-menu-link-title {
+        @apply text-sm font-medium leading-normal opacity-80;
+    }
+    .version {
+        @apply mt-[30px] text-xs font-medium leading-5 opacity-30 px-[30px];
     }
 }
