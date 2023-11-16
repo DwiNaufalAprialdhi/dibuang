@@ -148,7 +148,7 @@
         @apply font-extrabold text-2xl leading-tight tracking-wider flex items-center gap-1 text-white;
     }
     .notification {
-        @apply cursor-pointer text-white;
+        @apply cursor-pointer text-white hover:scale-105 duration-300;
     }
     .hero-box{
         @apply absolute -bottom-12 left-1/2 -translate-x-1/2 bg-white px-[15px] py-[22px] rounded-2xl shadow-sm flex items-center justify-between w-[330px];
@@ -460,5 +460,103 @@
     }
     .version {
         @apply mt-[30px] text-xs font-medium leading-5 opacity-30 px-[30px];
+    }
+
+    /* Rekening Class */
+    .rekening {
+        @apply w-full flex flex-col gap-[42px] px-[30px] pb-[39px];
+    }
+    .rekening-flex-col {
+        @apply flex flex-col gap-[5px]
+    }
+    .rekening-title {
+        @apply text-xs font-medium leading-normal uppercase opacity-50;
+    }
+    .rekening-text {
+        @apply text-sm font-medium leading-normal opacity-80;
+    }
+    .rekening-btn {
+        @apply mt-[251px] w-full p-4 bg-white border border-primary rounded-full text-primary text-base font-bold leading-6 hover:text-white hover:bg-primary;
+    }
+    .rekening-btn-save {
+        @apply mt-[251px] w-full p-4 bg-primary border border-primary rounded-full text-white text-base font-bold leading-6;
+    }
+    .rekening-input {
+        @apply p-4 bg-white outline-none border border-opacity-10 text-sm font-medium text-opacity-80 leading-normal rounded-[4px];
+    }
+
+    /* Data Diri Class */
+    .datadiri {
+        @apply w-full flex flex-col gap-[42px] px-[30px] pb-[39px];
+    }
+    .datadiri-flex-col {
+        @apply flex flex-col gap-[5px]
+    }
+    .datadiri-title {
+        @apply text-xs font-medium leading-normal uppercase opacity-50;
+    }
+    .datadiri-text {
+        @apply text-sm font-medium leading-normal opacity-80;
+    }
+    .datadiri-btn {
+        @apply mt-[251px] w-full p-4 bg-white border border-primary rounded-full text-primary text-base font-bold leading-6 hover:text-white hover:bg-primary;
+    }
+    .datadiri-btn-save {
+        @apply mt-[251px] w-full p-4 bg-primary border border-primary rounded-full text-white text-base font-bold leading-6;
+    }
+    .datadiri-input {
+        @apply p-4 bg-white outline-none border border-opacity-10 text-sm font-medium text-opacity-80 leading-normal rounded-[4px];
+    }
+    .datadiri-avatar {
+        @apply w-[94px] h-[94px] rounded-full self-center;
+    }
+    .datadiri-avatar-avatar {
+        @apply bg-secondary p-4 rounded-full text-sm font-medium leading-normal max-w-[144px] self-center mt-[10px];
+    }
+    .datadiri-input {
+        @apply p-4 bg-white outline-none border border-opacity-10 text-sm font-medium text-opacity-80 leading-normal rounded-[4px];
+    }
+
+    /* Inbox Class */
+    .inbox {
+        @apply px-[30px] pb-[495px] flex flex-col gap-5 w-full;
+    }
+    .inbox-flex-between {
+        @apply flex justify-between;
+    }
+    .inbox-flex-col {
+        @apply flex flex-col gap-3 max-w-[200px];
+    }
+    .inbox-status {
+        @apply text-sm font-medium leading-normal opacity-80;
+    }
+    .inbox-confirm {
+        @apply text-xs font-medium leading-normal opacity-30;
+    }
+    .inbox-date {
+        @apply text-xs font-medium leading-normal opacity-50;
+    }
+
+    /* About Class */
+    .about {
+        @apply w-full pb-[30px];
+    }
+    .about-hero {
+        @apply p-[25px] bg-primary w-full;
+    }
+    .about-icons {
+        @apply mx-auto;
+    }
+    .about-body {
+        @apply px-[30px] flex flex-col gap-[21px] mt-[30px];
+    }
+    .about-body-flex-col {
+        @apply flex flex-col gap-[10px]
+    }
+    .about-title {
+        @apply text-xl font-medium leading-normal opacity-80;
+    }
+    .about-desc {
+        @apply text-sm font-normal leading-normal opacity-50;
     }
 }
