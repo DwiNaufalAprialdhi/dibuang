@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dibuang - About</title>
+    <title>Dibuang - Ubah Data Diri</title>
     <link href="./css/global.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="./assets/icons/dibuang.png" />
   </head>
@@ -11,7 +11,7 @@
     <main>
       <!-- Header Start -->
       <header class="header">
-        <a href="entrance.html">
+        <a href="datadiri_driver.html">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -29,46 +29,49 @@
             />
           </svg>
         </a>
-        About
+        Ubah Data Diri
       </header>
       <!-- Header End -->
 
-      <!-- About Start -->
-      <section class="about">
-        <div class="about-hero">
-         <img src="./assets/icons/about.svg" alt="about" class="about-icons">
-        </div>
-        <div class="about-body">
-          <div class="about-body-flex-col">
-            <h2 class="about-title">what is Oreycle</h2>
-            <p class="about-desc">
-              ORecycle is a brand owned by PT. Dibuang for the Technology-based
-              Segregated Garbage Pick-up process which is implemented in the
-              form of a digital application using a Smartphone. With the process
-              through this application, your sorted waste will be picked up at
-              your home, then weighed digitally, accurately, and in real time.
-              We will replace the segregated waste in the form of rewards that
-              can be donated to NGOs that work with us. For now, the types of
-              waste that are managed by us are plastic, paper and glass bottles,
-              and in the future there will be more types of segregated waste
-              that we are ready to recycle. PT Dibuang is here to serve the
-              community in waste processing as an effort to help in preserving
-              the earth.
-            </p>
+      <!-- Data Diri Start -->
+      <form action="#">
+        <section class="datadiri">
+          <div class="datadiri-flex-col">
+            <img
+              src="./assets/img/avatar2.svg"
+              alt="avatar"
+              class="datadiri-avatar"
+            />
+            <button class="datadiri-avatar-avatar">Ubah Foto Profil</button>
           </div>
-          <div class="about-body-flex-col">
-              <h2 class="about-title">Atribusi</h2>
-              <p class="about-desc">
-                  Sebagian icon pada aplikasi ini diambil dari icon8
-                </p>
-                <p class="about-desc">
-                    <a target="_blank" href="https://icons8.com/icon/12143/open-box">Open Box</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-                </p>
-            </div>
+          <div class="datadiri-flex-col">
+            <h2 class="datadiri-title">Nama Lengkap</h2>
+            <input type="text" class="datadiri-input" value="Abdul Hanif" />
           </div>
-        </div>
-      </section>
-      <!-- About End -->
+          <div class="datadiri-flex-col">
+            <h2 class="datadiri-title">Nomer telepon</h2>
+            <input type="text" class="datadiri-input" value="0896120292725" />
+          </div>
+          <div class="datadiri-flex-col">
+            <h2 class="datadiri-title">Email</h2>
+            <input
+              type="email"
+              class="datadiri-input"
+              value="hanif@gmail.com"
+            />
+          </div>
+          <div class="datadiri-flex-col">
+            <h2 class="datadiri-title">Alamat penjemputan</h2>
+            <textarea name="" id="" cols="10" rows="5" class="datadiri-input">
+Jl raya tangerang  pusat b2 no.2, jakpus DKI Jakarta, 42211</textarea
+            >
+          </div>
+          <a href="datadiri_driver.html">
+            <button class="datadiri-btn-save">Simpan</button>
+          </a>
+        </section>
+      </form>
+      <!-- Data Diri End -->
     </main>
   </body>
 </html>
